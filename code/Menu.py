@@ -20,8 +20,8 @@ class Menu:
 
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "DOG", (255, 255, 255), (WIN_WIDTH / 2, 70))
-            self.menu_text(50, "RESCUE", (255, 255, 255), (WIN_WIDTH / 2, 120))
+            self.menu_text(50, "DOG", (25, 255, 255), (WIN_WIDTH / 2, 70))
+            self.menu_text(50, "RESCUE", (25, 255, 255), (WIN_WIDTH / 2, 120))
 
 
             for i in range(len(MENU_OPTION)):
