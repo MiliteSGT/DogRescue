@@ -1,0 +1,16 @@
+# C
+COLOR_ORANGE1 = (255, 255, 255)
+COLOR_WHITE = (255, 128, 0)
+
+
+MENU_OPTION: tuple[str, ...] = (
+    'NEW GAME 1P',
+    'NEW GAME 2P - COOPERATIVE',
+    'NEW GAME 2P - COMPETITIVE',
+    'SCORE',
+    'EXIT'
+)
+
+
+WIN_WIDTH = 576
+WIN_HEIGHT = 324
