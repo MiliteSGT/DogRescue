@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import pygame
 
+from code.Const import EVENT_ENEMY
 from code.Entity import Entity
 from code.EntityFactory import EntityFactory
 
@@ -11,8 +12,12 @@ class Level:
         self.window = window
         self.name = name
         self.game_mode = game_mode
-        self.entity_list:list[Entity] = []
+        self.entity_list: list[Entity] = []
         self.entity_list.extend(EntityFactory.get_entity('Level1Bg'))
+        self.entity_list.append(EntityFactory.get_entity('Player1'))
+        self.entity_list.append(EntityFactory.get_entity('Enemy1'))
+        self.entity_list.append(EntityFactory.get_entity('Enemy2'))
+        pygame.time.set_timer(EVENT_ENEMY, 2000)
 
     def run(self):
         clock = pygame.time.Clock()

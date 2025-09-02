@@ -1,8 +1,11 @@
 # C
+import pygame
+
 COLOR_ORANGE1 = (255, 255, 255)
 COLOR_WHITE = (255, 128, 0)
 
 #  E
+EVENT_ENEMY = pygame.USEREVENT + 1
 ENTITY_SPEED = {
     'Level0Bg0': 0,
     'Level1Bg1': 1,
@@ -11,6 +14,8 @@ ENTITY_SPEED = {
     'Level1Bg4': 4,
     'Level1Bg5': 5,
     'Level1Bg6': 6,
+    'Enemy1': 1,
+    'Enemy2': 1,
 }
 
 
